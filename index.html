@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ダイニングカフェるらん|トップ</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+  <link rel="stylesheet" href="/css/claude.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet"><!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<!-- //googlefonts -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/scropt.js" defer></script>
+  <script src="js/splide.js" defer></script>
+  <script src="js/drawer.js" defer></script>
+<!-- //トラッキングコード -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-58553824-1', 'auto');
+    ga('send', 'pageview');
+  
+  </script>
+<body>
+
+  <!-- ==========================================================
+       ▼ ここから：ローディング画面（最初に出るティール色の画面）
+       ========================================================== -->
+  <div id="loading">
+    <div id="loading-bg"></div>
+    <p>ランチメニューで人気なのはレモンステーキ丼です</p>
+  </div><!-- /loading -->
+
+
+  <div class="bg" id="top">
+
+    <!-- ==========================================================
+         ▼ ここから：ヘッダー（ロゴ・PC用ナビ・ハンバーガーボタン）
+         ========================================================== -->
+    <header class="test">
+      <div class="beside">
+        <img
+          src="img/rurankao.gif"
+          alt="るらんちゃん"
+          class="header-icon"
+        >
+        <img
+          src="img/ruran_text_only.png"
+          alt="Dining Cafe るらん"
+          class="header-logo"
+        >
+
+        <!-- PC用ナビ -->
+        <nav class="pc-nav" aria-label="メインメニュー">
+          <a href="#top">トップ</a>
+          <a href="#consept">コンセプト</a>
+          <a href="#menyu">メニュー</a>
+          <a href="#instagram">インスタグラム</a>
+          <a href="#news">ニュース</a>
+        </nav>
+      </div><!-- /beside -->
+
+      <!-- ハンバーガーボタン（スマホ用） -->
+      <button class="burger"
+              id="drawer-open"
+              type="button"
+              aria-label="メニューを開く"
+              aria-controls="drawer-menu"
+              aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+
+    <!-- ==========================================================
+         ▼ ここから：ドロワーメニュー（スマホで右から出るメニュー）
+         ========================================================== -->
+
+    <!-- 背景の暗い幕 -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- メニュー本体 -->
+    <aside class="drawer-menu" id="drawer-menu"
+           aria-label="メニュー" aria-hidden="true" inert>
+
+      <!-- 閉じるボタン -->
+      <button class="drawer-close" type="button" aria-label="メニューを閉じる">
+        ×
+      </button>
+
+      <!-- ロゴ -->
+      <div class="drawer-logo">
+        <img src="img/rurankao.gif" alt="" class="drawer-mascot">
+        <img src="img/ruran_text_only.png"
+             alt="Dining Cafe るらん" class="drawer-logo-text">
+      </div>
+
+      <!-- 「── MENU ──」の見出し -->
+      <div class="drawer-heading">
+        <span></span><p>MENU</p><span></span>
+      </div>
+
+      <!-- リンク一覧 -->
+      <nav class="drawer-nav">
+        <a href="#top">トップ</a>
+        <a href="#cnsept">コンセプト</a>
+        <a href="#menyu">メニュー</a>
+        <a href="#instagram">インスタグラム</a>
+        <a href="#news">ニュース</a>
+      </nav>
+
+      <!-- 下部（ひとこと・Instagram） -->
+      <footer class="drawer-footer">
+        <svg class="drawer-leaf" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 38 C20 26 21 16 28 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M24 14 C16 12 12 8 11 3 C19 4 24 8 24 14Z" fill="currentColor" opacity=".75"/>
+          <path d="M22 24 C29 22 33 18 34 13 C26 14 22 18 22 24Z" fill="currentColor" opacity=".75"/>
+          <path d="M20 30 C13 29 9 25 8 20 C15 21 20 24 20 30Z" fill="currentColor" opacity=".75"/>
+        </svg>
+        <p class="drawer-message">木の香りがする、小さなお店</p>
+        <span class="drawer-line" aria-hidden="true"></span>
+        <a class="drawer-instagram"
+           href="https://www.instagram.com/"
+           target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/>
+          </svg>
+          Instagram
+        </a>
+      </footer>
+    </aside>
+
+
+    <!-- ==========================================================
+         ▼ ここから：メインビジュアル（スライダー＋キャッチコピー＋混み具合）
+         ========================================================== -->
+    <section class="splide" aria-label="お店の写真">
+
+      <!-- スライダーの写真 -->
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="img/test.jpg" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="img/kara1.JPG" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="img/top3.JPG" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <!-- キャッチコピー -->
+      <div class="hero-copy" aria-label="木の香りがする、小さなお店。">
+        <p class="hero-copy__text">木の香りがする 小さなお店</p>
+      </div>
+
+      <!-- 混み具合表示（あとでFirebaseの値に差し替える） -->
+      <aside class="crowd-status" aria-label="ただいまの混み具合" aria-live="polite">
+        <p class="crowd-status__label">ただいまの混み具合</p>
+        <div class="crowd-status__main">
+          <span class="crowd-status__dot" aria-hidden="true"></span>
+          <p class="crowd-status__value">すぐにご案内できます</p>
+        </div>
+        <p class="crowd-status__updated">最終更新：13:33</p>
+      </aside>
+    </section>
+
+  </div><!-- /bg -->
+
+
+  <!-- ==========================================================
+       ▼ ここから：コンセプト（写真＋「木の香りがする、小さなお店」）
+       ========================================================== -->
+  <section class="concept" id="concept">
+    <div class="concept__image">
+      <img
+        src="img/concept.JPG"
+        alt="木のテーブルを囲み、料理を楽しむひととき"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="concept__content">
+      <p class="concept__eyebrow">OUR CONCEPT</p>
+
+      <h2 class="concept__title">
+        木の香りがする、小さなお店
+      </h2>
+
+      <p class="concept__text">
+        木のぬくもりと、おいしい料理<br>
+        一人ひとりに寄り添う心遣い
+      </p>
+
+      <p class="concept__message">
+        ほっと心がほどけるひとときを
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================
+       ▼ ここから：メニュー（まだ空。あとでランチ・ディナー・ドリンクを追加）
+       ========================================================== -->
+  <section class="next-section" id="menu">
+  </section>
+
+
+  <!-- ==========================================================
+       ▼ ここから：スクリプト
+       ========================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script><!-- swiper -->
+
+</body>
+</html>
+</html>
