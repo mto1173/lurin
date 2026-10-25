@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     pauseOnFocus: false,
     arrows: false,      // 左右の矢印を表示しない
     pagination: false,  // ページ番号を表示しない
-    drag: true          // スワイプ操作を有効にする
+    drag: false          // スワイプ操作を有効にする
   }).mount();
 });
